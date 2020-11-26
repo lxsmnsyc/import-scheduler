@@ -18,7 +18,7 @@ if (IS_CLIENT) {
   });
 }
 
-export default async function importForDisplay(): Promise<void> {
+export default async function importForInteractive(): Promise<void> {
   if (resolver != null) {
     await resolver;
   }
