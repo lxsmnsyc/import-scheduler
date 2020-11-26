@@ -1,0 +1,55 @@
+{
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "license": "MIT",
+  "keywords": [
+    "pridepack"
+  ],
+  "name": "import-scheduler",
+  "module": "dist/import-scheduler.esm.js",
+  "exports": {
+    "require": "./dist/index.js",
+    "imports": "./dist/import-scheduler.esm.js"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/node": "^14.14.10",
+    "eslint": "^7.14.0",
+    "eslint-config-lxsmnsyc": "^0.1.19",
+    "pridepack": "^0.3.7",
+    "tslib": "^2.0.3",
+    "typescript": "^4.1.2"
+  },
+  "peerDependencies": {},
+  "scripts": {
+    "prepublish": "pridepack build",
+    "build": "pridepack build",
+    "type-check": "pridepack check",
+    "lint": "pridepack lint",
+    "test": "pridepack test --passWithNoTests",
+    "clean": "pridepack clean",
+    "watch": "pridepack watch"
+  },
+  "description": "Dynamic import scheduler",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "url": "https://github.com/lxsmnsyc/import-scheduler.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/lxsmnsyc/import-scheduler",
+  "bugs": {
+    "url": "https://github.com/lxsmnsyc/import-scheduler/issues"
+  },
+  "author": "Alexis Munsayac <alexis.munsayac@gmail.com>",
+  "private": false
+}
