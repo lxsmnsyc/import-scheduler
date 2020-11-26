@@ -5,7 +5,7 @@ let resolver: Promise<void>;
 if (IS_CLIENT) {
   resolver = new Promise<void>((resolve) => {
     const callback = () => {
-      if (document.readyState === 'complete') {
+      if (document.readyState === 'interactive') {
         resolve();
         document.removeEventListener('readystatechange', callback, false);
       }
