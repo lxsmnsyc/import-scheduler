@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -17,20 +17,20 @@
   "module": "dist/import-scheduler.esm.js",
   "exports": {
     "require": "./dist/index.js",
-    "imports": "./dist/import-scheduler.esm.js"
+    "import": "./dist/import-scheduler.esm.js"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.15",
-    "@types/node": "^14.14.10",
-    "eslint": "^7.14.0",
-    "eslint-config-lxsmnsyc": "^0.1.19",
-    "pridepack": "^0.4.1",
-    "tslib": "^2.0.3",
-    "typescript": "^4.1.2"
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.34",
+    "eslint": "^7.22.0",
+    "eslint-config-lxsmnsyc": "^0.1.20",
+    "pridepack": "^0.7.2",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3"
   },
   "peerDependencies": {},
   "scripts": {
-    "prepublish": "pridepack build",
+    "prepublish": "pridepack clean && pridepack build",
     "build": "pridepack build",
     "type-check": "pridepack check",
     "lint": "pridepack lint",
