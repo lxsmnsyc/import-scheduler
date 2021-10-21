@@ -66,9 +66,6 @@
     "watch": "pridepack watch"
   },
   "description": "Dynamic import scheduler",
-  "publishConfig": {
-    "access": "public"
-  },
   "repository": {
     "url": "https://github.com/lxsmnsyc/import-scheduler.git",
     "type": "git"
